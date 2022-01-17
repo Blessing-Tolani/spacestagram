@@ -7,6 +7,14 @@
   cursor: pointer;
   font-weight: 300;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  outline: none !important;
+}
 .card-box {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-top: 5%;
@@ -45,4 +53,7 @@
 }
 .like-yes {
   background: url("../public/like.svg");
+}
+.wrapper {
+  min-height: 100vh;
 }

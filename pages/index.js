@@ -8,11 +8,19 @@ export default function Home() {
     <div>
       <Head>
         <title>Spacestagram</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/shopify.jpg" />
       </Head>
-      <Header />
-      <SectionOne />
-      <Footer />
+      <div className="wrapper flex flex-col">
+        <div>
+          <Header />
+        </div>
+        <div>
+          <SectionOne />
+        </div>
+        <div className="mt-auto">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

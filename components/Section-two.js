@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default function SectionTwo(props) {
-  let dateValue = props.input;
   const [planetary, setPlanetary] = useState([]);
-
+  let dateValue = props.input;
   let result;
   let planetaryArray = [];
   async function accept() {

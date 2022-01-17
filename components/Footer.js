@@ -9,7 +9,7 @@ export default function Footer() {
           rel="stylesheet"
         />
       </Head>
-      <div className=" relative bg-shopifyGreen flex  flex-col items-center justify-center h-40 w-full text-white mt-10">
+      <div className="relative bg-shopifyGreen flex  flex-col items-center justify-center h-36 w-full text-white mt-10">
         <div className=" text-lg  sm:text-2xl font-semibold font-sourcesans ">
           Spacestagram
         </div>
