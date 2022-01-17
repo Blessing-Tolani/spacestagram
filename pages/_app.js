@@ -1,7 +1,26 @@
-import '@styles/globals.css'
+import "@styles/globals.css";
+import Loading from "@components/loading";
+import { useEffect, useState } from "react";
 
-function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 5000);
+  }, []);
+
+  const Layout = ({ children }) =>
+    Component.Layout ? (
+      <Component.Layout>{children}</Component.Layout>
+    ) : (
+      <>{children}</>
+    );
+
+  return (
+    <Layout>
+      {loading == false ? <Component {...pageProps} /> : <Loading />}
+    </Layout>
+  );
 }
 
-export default Application
+export default App;

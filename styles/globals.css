@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  font-weight: 300;
+}
+.card-box {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-top: 5%;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(1, 90%);
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 640px) {
+  .gallery-container {
+    grid-template-columns: repeat(1, 90%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 47%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+@media screen and (min-width: 2048px) {
+  .gallery-container {
+    grid-template-columns: repeat(4, 30%);
+  }
+}
+.like-no {
+  background: url("../public/dislike.svg");
+}
+.like-yes {
+  background: url("../public/like.svg");
+}
