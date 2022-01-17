@@ -12,7 +12,7 @@ export default function SectionOne() {
   return (
     <>
       <div>
-        <div className="bg-shopifyGreen h-60 flex flex-col items-center pt-10">
+        <div className="bg-shopifyGreen h-48 sm:h-60 flex flex-col items-center pt-10">
           <h2 className="text-base sm:text-2xl text-white pb-6">
             Check the astronomy picture of the day
           </h2>
